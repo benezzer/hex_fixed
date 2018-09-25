@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	background-color: #000;
+	font-family: 'Poiret One', cursive;
+}
+#container {
+	width: 100vw;
+	min-height: 100vh;
+	position: relative;
+}
+#left_arrow {
+	width: 10vw;
+	height: 10vw;
+	background-image: url(../ui_images/left.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 2vw;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 100;
+	cursor: pointer;
+}
+#right_arrow {
+	width: 10vw;
+	height: 10vw;
+	background-image: url(../ui_images/right.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 2vw;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 101;
+	cursor: pointer;
+}
+#parent_of_myhex {
+	-webkit-perspective: 1800px;
+	-webkit-perspective-origin: 50% -200px;
+	-moz-perspective: 1800px;
+	-moz-perspective-origin: 50% -200px;
+	perspective: 1800px;
+	perspective-origin: 50% -200px;
+	position: relative;
+	top: 10vh;
+	margin: 0 auto;
+}
+#myhex {
+	position: relative;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	-webkit-transition: all 1.5s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: all 1.5s;
+	-moz-transform-style: preserve-3d;
+	transition: all 1.5s;
+	transform-style: preserve-3d;
+}
+.side {
+	position: absolute;
+	width: 402px;
+	height: 402px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#myhex .first {
+	-webkit-transform: translateZ(346px);
+	-moz-transform: translateZ(346px);
+	transform: translateZ(346px);
+	box-shadow: inset 10px -20px 60px rgba(0,0,0,0.80);
+	background-image: url(../hex_images/first.jpg);
+}
+#myhex .second {
+	-webkit-transform: rotateY(60deg) translateZ(346px);
+	-moz-transform: rotateY(60deg) translateZ(346px);
+	transform: rotateY(60deg) translateZ(346px);
+	box-shadow: inset 10px -20px 60px rgba(0,0,0,0.80);
+	background-image: url(../hex_images/second.jpg);
+}
+#myhex .third {
+	-webkit-transform: rotateY(120deg) translateZ(346px);
+	-moz-transform: rotateY(120deg) translateZ(346px);
+	transform: rotateY(120deg) translateZ(346px);
+	box-shadow: inset 10px -20px 60px rgba(0,0,0,0.80);
+	background-image: url(../hex_images/third.jpg);
+}
+#myhex .fourth {
+	-webkit-transform: rotateY(180deg) translateZ(346px);
+	-moz-transform: rotateY(180deg) translateZ(346px);
+	transform: rotateY(180deg) translateZ(346px);
+	box-shadow: inset 10px -20px 60px rgba(0,0,0,0.80);
+	background-image: url(../hex_images/fourth.jpg);
+}
+#myhex .fifth {
+	-webkit-transform: rotateY(240deg) translateZ(346px);
+	-moz-transform: rotateY(240deg) translateZ(346px);
+	transform: rotateY(240deg) translateZ(346px);
+	box-shadow: inset 10px -20px 60px rgba(0,0,0,0.80);
+	background-image: url(../hex_images/fifth.jpg);
+}
+#myhex .sixth {
+	-webkit-transform: rotateY(300deg) translateZ(346px);
+	-moz-transform: rotateY(300deg) translateZ(346px);
+	transform: rotateY(300deg) translateZ(346px);
+	box-shadow: inset 10px -20px 60px rgba(0,0,0,0.80);
+	background-image: url(../hex_images/sixth.jpg);
+}
+#myhex p {
+	font-size: 36px;
+	color: #fff;
+	font-weight: 800;
+	text-shadow: 2px 2px 0px #000000;
+	padding: 20px 40px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+#myhex .firstText {
+	-webkit-transform: translateZ(460px);
+	-moz-transform: translateZ(460px);
+	transform: translateZ(460px);
+}
+#myhex .secondText {
+	-webkit-transform: rotateY(60deg) translateZ(460px);
+	-moz-transform: rotateY(60deg) translateZ(460px);
+	transform: rotateY(60deg) translateZ(460px);
+}
+#myhex .thirdText {
+	-webkit-transform: rotateY(120deg) translateZ(460px);
+	-moz-transform: rotateY(120deg) translateZ(460px);
+	transform: rotateY(120deg) translateZ(460px);
+}
+#myhex .fourthText {
+	-webkit-transform: rotateY(180deg) translateZ(460px);
+	-moz-transform: rotateY(180deg) translateZ(460px);
+	transform: rotateY(180deg) translateZ(460px);
+}
+#myhex .fifthText {
+	-webkit-transform: rotateY(240deg) translateZ(460px);
+	-moz-transform: rotateY(240deg) translateZ(460px);
+	transform: rotateY(240deg) translateZ(460px);
+}
+#myhex .sixthText {
+	-webkit-transform: rotateY(300deg) translateZ(460px);
+	-moz-transform: rotateY(300deg) translateZ(460px);
+	transform: rotateY(300deg) translateZ(460px);
+}
